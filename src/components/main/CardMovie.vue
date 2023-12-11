@@ -120,7 +120,7 @@ const loadAvailableYears = () => {
       </div>
     </div>
   </div>
-  <div class="d-flex flex-wrap my-2 md-5">
+  <div class="d-flex flex-wrap my-2 md-5 margin-left">
     <div class="col-md-4 col-12">
       <div class="container-info-results d-flex flex-column align-items-center align-items-md-start margin">
         <p class="mb-0 infos-pages">
@@ -154,7 +154,9 @@ const loadAvailableYears = () => {
 .underline {
   text-decoration: underline !important;
 }
-
+.margin-left{
+  margin-left: 290px;
+}
 .title-text {
   font-weight: bold;
   font-size: 18px;
