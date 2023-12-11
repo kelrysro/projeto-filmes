@@ -11,7 +11,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1 id="Text-h1">Tendências de Filmes</h1>
+  <h1 id="Text-h1">Filmes mais vistos</h1>
   <carousel :items-to-show="4.2" class="Margin">
     <slide v-for="(movie) in movieStore.movies" :key="movie.id">
     <router-link :to="`/detailMovie/${movie.id}`" class="underline">

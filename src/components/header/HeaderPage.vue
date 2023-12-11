@@ -31,7 +31,7 @@ function searchButton() {
       <div class="nav-collapse">
         <div class="mr-auto navbar-nav">
           <router-link :to="{ name: 'home' }" class="nav-link" :class="{ 'active-link': currentRoute === 'home' }">
-            Descubra
+            Explorar
           </router-link>
           <router-link :to="{ name: 'movie' }" class="nav-link" :class="{ 'active-link': currentRoute === 'movie' }">
             Filmes

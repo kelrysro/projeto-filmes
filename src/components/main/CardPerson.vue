@@ -73,8 +73,8 @@ const prevPage = async () => {
       <div class="col-md-4 col-12">
         <div class="container-pagination d-flex justify-content-center">
           <ul class="pagination">
-            <li @click="prevPage" class="page-item">Voltar Página</li>
-            <li @click="nextPage" class="page-item">Próxima Página</li>
+            <li @click="prevPage" class="page-item">Voltar</li>
+            <li @click="nextPage" class="page-item">Próxima</li>
           </ul>
         </div>
       </div>
