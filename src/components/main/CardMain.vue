@@ -11,7 +11,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1 id="Text-h1">Tv Shows</h1>
+  <h1 id="Text-h1">Séries de Tv</h1>
   <carousel :items-to-show="4.2" class="Margin">
     <slide v-for="series in tvStore.tvShows" :key="series.id">
       <router-link :to="`/detailTv/${series.id}`" class="underline">
