@@ -134,7 +134,7 @@ const getKeywordsNames = (keywords) => {
                         <button class="btn-show-cast btn-lg" @click="toggleShowMore">
                             {{ showMoreCast ? 'ver menos' : 'ver mais' }}
                         </button>
-                    </div>/router-link>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-12">
