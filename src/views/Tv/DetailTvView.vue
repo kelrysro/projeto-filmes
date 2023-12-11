@@ -104,14 +104,16 @@ const getKeywordsNames = (keywords) => {
                     <div class="d-flex flex-wrap">
                         <div v-for="(castMember) in tv.credits.cast.slice(0, showMoreCast ? undefined : maxVisibleCastMembers)"
                             :key="castMember.id" class="mb-3 col-lg-3 col-sm-4 col-6 wid-card">
-                            <div class="h-100 card">
-                                <img
+                            <router-link :to="`/detailPerson/${castMember.id}`" class="underline">
+                                <div class="h-100 card">
+                                    <img
                                     :src="`https://image.tmdb.org/t/p/w500${castMember.profile_path}`" />
-                                <div class="card-body">
-                                    <h2 class="name-member">{{ castMember.name }}</h2>
-                                    <p class="mt-1 char">{{ castMember.character }}</p>
+                                    <div class="card-body">
+                                        <h2 class="name-member">{{ castMember.name }}</h2>
+                                        <p class="mt-1 char">{{ castMember.character }}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </router-link>
                         </div>
                     </div>
                     <div class="text-center">
@@ -174,7 +176,9 @@ const getKeywordsNames = (keywords) => {
 .image-bg-top p {
     margin-bottom: 0 !important;
 }
-
+.underline{
+    text-decoration: none;
+}
 .details-left {}
 
 .details-right {

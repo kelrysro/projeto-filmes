@@ -33,6 +33,7 @@ const prevPage = async () => {
       >
         <div class="mt-5">
           <router-link :to="`/detailPerson/${people.id}`" class="underline">
+            
             <div class="h100 card">
               <div class="img">
                 <img
